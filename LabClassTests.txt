@@ -1,0 +1,17 @@
+LabClass co452Lab = new LabClass(3);
+co452Lab.setInstructor("Nicholas Day");
+co452Lab.setRoom("G200");
+co452Lab.setTime("29th Tuesday September 2020");
+Student student1 = new Student("Marco Jott", "1224");
+student1.addCredits(20);
+Student student2 = new Student("Jessica Hyde", "7548");
+Student student3 = new Student("Dorian Pavus", "2385");
+student2.addCredits(20);
+student3.addCredits(20);
+student1.changeName("Marco");
+student2.changeName("Jess");
+student3.changeName("Dorian");
+Course course1 = new Course();
+student1.enrollingOnCourse(course1);
+student2.enrollingOnCourse(course1);
+student3.enrollingOnCourse(course1);

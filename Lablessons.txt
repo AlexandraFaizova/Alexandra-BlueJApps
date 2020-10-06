@@ -1,0 +1,34 @@
+LabClass co452Lab = new LabClass(3);
+co452Lab.setInstructor("Nicholas Day");
+co452Lab.setRoom("G200");
+co452Lab.setTime("29th Tuesday September 2020");
+Student student1 = new Student("Marco Jott", "1224");
+student1.addCredits(20);
+Student student2 = new Student("Jessica Hyde", "7548");
+Student student3 = new Student("Dorian Pavus", "2385");
+student2.addCredits(20);
+student3.addCredits(20);
+student1.changeName("Marco");
+student2.changeName("Jess");
+student3.changeName("Dorian");
+Course course1 = new Course();
+student1.enrollingOnCourse(course1);
+student2.enrollingOnCourse(course1);
+student3.enrollingOnCourse(course1);
+co452Lab.printList();
+Lab class 29th Tuesday September 2020
+Instructor: Nicholas Day   Room: G200
+Class list:
+Number of students: 0
+co452Lab.enrollStudent(student1);
+co452Lab.enrollStudent(student2);
+co452Lab.enrollStudent(student3);
+course1.setCourseCode("G600 Maths");
+co452Lab.printList();
+Lab class 29th Tuesday September 2020
+Instructor: Nicholas Day   Room: G200
+Class list:
+Marco, student ID: 1224, credits: 20
+Jess, student ID: 7548, credits: 20
+Dorian, student ID: 2385, credits: 20
+Number of students: 3
