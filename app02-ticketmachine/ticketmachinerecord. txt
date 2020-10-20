@@ -1,0 +1,32 @@
+Ticket ticket1 = new Ticket("Aylesbury", 20);
+Ticket ticket1 = new Ticket("Aylesbury", 20);
+ticket1.print();
+Ticket AylesburyPrice :  Recieved Tue Oct 20 20:42:31 BST 2020
+Ticket ticket1 = new Ticket("Aylesbury", 20);
+ticket1.print();
+Ticket AylesburyPrice : 20 Recieved Tue Oct 20 20:43:43 BST 2020
+Ticket ticket1 = new Ticket("aylesbury", 20);
+TicketMachine ticketMa1 = new TicketMachine(20);
+ticketMa1.selectAylesbury();
+TicketMachine ticketMa1 = new TicketMachine(20);
+Ticket ticket1 = new Ticket("aylesbury", 20);
+ticketMa1.selectAylesbury();
+ticket1.print();
+Ticket aylesburyPrice : 20 Recieved Tue Oct 20 22:01:37 BST 2020
+Ticket ticket2 = new Ticket("highwycombe", 20);
+Ticket ticket3 = new Ticket("amersham", 20);
+ticket2.print();
+Ticket highwycombePrice : 20 Recieved Tue Oct 20 22:02:18 BST 2020
+ticket3.print();
+Ticket amershamPrice : 20 Recieved Tue Oct 20 22:02:29 BST 2020
+ticketMa1.selectAylesbury();
+ticketMa1.selectHighwycombe();
+ticketMa1.selectAmersham();
+ticketMa1.getBalance()
+    returned int 0
+ticketMa1.getPrice()
+    returned int 20
+TicketMachine ticketMa1 = new TicketMachine(20);
+Ticket ticket1 = new Ticket("amersham", 20);
+Ticket ticket2 = new Ticket("highwycombe", 20);
+Ticket ticket3 = new Ticket("aylesbury", 20);
