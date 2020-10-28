@@ -6,7 +6,8 @@ import java.util.*;
  * 
  * @author Michael Kölling and David Barnes
  * @version 2016.02.29
- */
+ * Modified by Alexandra Faizova (22014239)
+ */ 
 public class Student
 {
     // the student's full name
@@ -82,6 +83,16 @@ public class Student
      */
     public void print()
     {
-        System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        System.out.println(name + ", student ID: " + id + ", credits: " 
+        + credits);
+    }
+    
+    private Course course; 
+    /**
+     * Enrol student onto course
+     */
+    public void enrolOnCourse(Course course)
+    {
+        this.course = course;
     }
 }

@@ -1,0 +1,65 @@
+Student student1 = new Student("Jonathan Walker", "32");
+student1.addCredits(20);
+student1.changeName("Johhny");
+student1.getCredits()
+    returned int 20
+student1.getLoginName()
+    Exception occurred.
+student1.getName()
+    returned String "Johhny"
+student1.print();
+Johhny, student ID: 32, credits: 20
+Course course1 = new Course("CL394", "Psychology");
+Student student1 = new Student("John Doe", "123");
+Course course1 = new Course("2", "Course 1");
+Module module1 = new Module("Psychology", "CL394");
+student1.addCredits(15);
+student1.changeName("Johnny");
+student1.enrolOnCourse(course1);
+student1.getCredits()
+    returned int 15
+student1.getName()
+    returned String "Johnny"
+module1.awardMark(60);
+module1.getMark()
+    returned int 60
+module1.getCodeNo()
+    returned String "CL394"
+module1.getMark()
+    returned int 60
+module1.ispassed()
+    returned boolean true
+module1.print();
+Module: CL394 Psychology, Mark = 60
+course1.createModule();
+course1.coursePassed()
+    returned boolean false
+course1.calculateFinalMark();
+Can't calculate final grade
+Grades.values()
+    returned Object <object reference>
+student1.enrolOnCourse(course1);
+course1.addMark(60, 60);
+The module isn't assigned to the course
+course1.print();
+Course 2 - Course 1
+Final Mark = 0
+course1.addMark(15, 60);
+The module isn't assigned to the course
+course1.createModule();
+Student student2 = new Student("Jessia Jones", "321");
+Course course2 = new Course("CL432", "English Literature");
+Module module2 = new Module("Enlgish Literature", "CL432");
+student2.addCredits(20);
+student2.enrolOnCourse(course2);
+course2.createModule();
+module2.getCodeNo()
+    returned String "CL432"
+course2.createModule();
+course2.createModule();
+course2.createModule();
+course2.print();
+Course CL432 - English Literature
+Final Mark = 0
+course2.addMark(20, 60);
+The module isn't assigned to the course
