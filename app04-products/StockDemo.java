@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -5,22 +7,34 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * Modified by Alexandra Faizova
+ * Version 0.1
  */
 public class StockDemo
 {
     // The stock manager.
     private StockManager manager;
+    private Random generator;  
+    
 
     /**
-     * Create a StockManager and populate it with a few
-     * sample products.
+     * Stock manager with all available sample products.
      */
-    public StockDemo()
+    public StockDemo(StockManager manager)
     {
+        this.manager = manager;
         manager = new StockManager();
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        manager.addProduct(new Product(40, "Apple"));
+        manager.addProduct(new Product(41,  "Pear"));
+        manager.addProduct(new Product(42,  "Strawberry"));
+        manager.addProduct(new Product(43,  "Pineapple"));
+        manager.addProduct(new Product(44,  "Cherry"));
+        manager.addProduct(new Product(45,  "Grapes"));
+        manager.addProduct(new Product(46,  "Melon"));
+        manager.addProduct(new Product(47,  "Orange"));
+        manager.addProduct(new Product(48,  "Mango"));
+        manager.addProduct(new Product(49,  "Lemon"));
+        manager.addProduct(new Product(50,  "Bannana"));
     }
     
     /**
@@ -28,70 +42,45 @@ public class StockDemo
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
      */
-    public void demo()
+    public void runDemo()
     {
-        // Show details of all of the products.
+        System.out.println ("The stock of Alex's shop");
+        System.out.println ();
         manager.printProductDetails();
-        // Take delivery of 5 items of one of the products.
-        manager.delivery(132, 5);
-        manager.printProductDetails();
+        print("Delivery");
+        deliverProducts();
+        print ("Sell");
+        sellProducts();
     }
     
-    /**
-     * Show details of the given product. If found,
-     * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
-     */
-    public void showDetails(int id)
+    
+    private void print(String spacer)
     {
-        Product product = getProduct(id);
-        
-        if(product != null) 
-        {
-            System.out.println(product.toString());
-        }
+        System.out.println();
+        System.out.println("Demonstrating: " + spacer);
+        System.out.println ();
     }
     
-    /**
-     * Sell one of the given item.
-     * Show the before and after status of the product.
-     * @param id The ID of the product being sold.
-     */
-    public void sellProduct(int id)
+    private void sellProducts()
     {
-        Product product = getProduct(id);
-        
-        if(product != null) 
-        {
-            showDetails(id);
-            product.sellOne();
-            showDetails(id);
+       int amount = 0;
+       
+       for (int id = 100; id <= 109; id++)
+       {
+           amount = generator.nextInt(20) + 5;
+           manager.delivery(id,amount);
         }
-    }
+}
     
-    /**
-     * Get the product with the given id from the manager.
-     * An error message is printed if there is no match.
-     * @param id The ID of the product.
-     * @return The Product, or null if no matching one is found.
-     */
-    public Product getProduct(int id)
+    private void deliverProducts()
     {
-        Product product = manager.findProduct(id);
+        int amount = 0;
         
-        if(product == null) 
+        for (int id = 100; id <= 109; id++)
         {
-            System.out.println("Product with ID: " + id +
-                               " is not recognised.");
-        }
-        return product;
+            amount = generator.nextInt(10) + 5;
+            manager.delivery(id,amount);
     }
-
-    /**
-     * @return The stock manager.
-     */
-    public StockManager getManager()
-    {
-        return manager;
-    }
+}
+        
 }

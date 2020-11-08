@@ -3,6 +3,8 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * Modified by Alexandra
+ * Version 0.1
  */
 public class Product
 {
@@ -42,6 +44,28 @@ public class Product
         return name;
     }
 
+    public void renameProduct(String newName)
+    {
+        this.name = newName;
+    }
+    
+    public void sell(int amount)
+    {
+        if(quantity > amount)
+        {
+           quantity -= amount;
+        }
+        else if (quantity < amount)
+        {
+            System.out.println( "Not enough : " + name + " in stock.");
+        }
+        else
+        {
+            System.out.println(
+            "Amount required has to be positive");
+        }
+    }
+        
     /**
      * @return The quantity in stock.
      */

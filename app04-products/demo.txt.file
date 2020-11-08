@@ -1,0 +1,90 @@
+StockDemo stockDem1 = new StockDemo();
+StockManager stockMan1 = new StockManager();
+Product product1 = new Product(44, "product1test");
+product1.getID()
+    returned int 44
+product1.getName()
+    returned String "product1test"
+product1.getQuantity()
+    returned int 0
+product1.increaseQuantity(3);
+product1.getQuantity()
+    returned int 3
+product1.sellOne();
+product1.getQuantity()
+    returned int 2
+product1.toString()
+    returned String "44: product1test stock level: 2"
+StockDemo stockDem1 = new StockDemo();
+stockDem1.getProduct(46)
+Product with ID: 46 is not recognised.
+    returned Object null
+stockDem1.getManager()
+    returned Object <object reference>
+stockDem1.demo();
+StockManager stockMan1 = new StockManager();
+StockDemo stockDem1 = new StockDemo(stockMan1);
+Product product1 = new Product(40, "Apple");
+product1.getID()
+    returned int 40
+product1.getQuantity()
+    returned int 0
+product1.increaseQuantity(4);
+product1.getQuantity()
+    returned int 4
+product1.renameProduct("Berry");
+product1.sellOne();
+product1.sell(2);
+product1.getQuantity()
+    returned int 1
+product1.toString()
+    returned String "40: Berry stock level: 1"
+product1.getID()
+    returned int 40
+product1.toString()
+    returned String "40: Berry stock level: 1"
+stockMan1.addProduct(product1);
+stockMan1.checkLowStock();
+40: Berry stock level: 1
+product1.increaseQuantity(1);
+product1.getQuantity()
+    returned int 2
+product1.increaseQuantity(2);
+stockMan1.findProduct(40)
+    returned Object <object reference>
+stockMan1.delivery(40, 2);
+Product Delivered : 40: Berry stock level: 6
+stockMan1.printHeading();
+
+Alex's Stock List
+=================
+
+stockMan1.removeProduct(40);
+Product Removed: 40: Berry stock level: 6
+stockMan1.renameProduct(40, "Apple");
+stockMan1.search("Pear");
+Product unable to be found
+Product product2 = new Product(41, "Pear");
+stockMan1.search("Pear");
+Product unable to be found
+product2.getName()
+    returned String "Pear"
+stockMan1.search("Pear");
+Product unable to be found
+product2.increaseQuantity(30);
+stockMan1.sellMultiple(41, 10);
+product2.getQuantity()
+    returned int 30
+stockMan1.printAllProducts();
+
+Alex's Stock List
+=================
+
+
+stockMan1.printProductDetails();
+stockMan1.printAllProducts();
+
+Alex's Stock List
+=================
+
+
