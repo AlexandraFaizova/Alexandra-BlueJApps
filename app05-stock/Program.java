@@ -2,8 +2,8 @@
 /**
  * Write a description of class Program here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Alexandra Faizova
+ * Version 0.1
  */
 public class Program
 {
