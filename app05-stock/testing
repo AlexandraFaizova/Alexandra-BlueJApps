@@ -1,0 +1,200 @@
+Enter the product's identification
+> 41
+Product ID already exists
+ Enter another ID
+> 42
+Enter the product's identification
+> 42
+
+ you have now added an ID: 42: 42 stock level: 0
+
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> add
+Adding new products
+
+Enter the product's identification
+> 42
+Product ID already exists
+ Enter another ID
+> 43
+Enter the product's identification
+> sell
+
+ you have now added an ID: 43: sell stock level: 0
+
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> sell
+Sell product
+
+Enter the product's identification
+> 43
+Enter the amount of products sold: 
+> 2
+Not enough : sell in stock.
+Product Sold : sellAmount sold : 2
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> restock
+Items are currently being restocked
+
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> deliver
+Deliver product
+
+Enter the product's identification
+> 42
+Please enter amount delivered: 
+> 4
+Product Delivered : 42: 42 stock level: 4
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> search
+Search Products
+
+Enter the product's identification
+> 42
+Product found: 42: 42 stock level: 4
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> sell
+Sell product
+
+Enter the product's identification
+> 42
+Enter the amount of products sold: 
+> 3
+Product Sold : 42Amount sold : 3
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> search
+Search Products
+
+Enter the product's identification
+> 42
+Product found: 42: 42 stock level: 1
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> restock
+Items are currently being restocked
+
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> show low stock
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> printeverything
+> print all
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> printeverything
+> printeverything
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> printeverything
+> product
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> printeverything
+> 43
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> remove
+Removing current product
+
+Enter the product's identification
+> 42
+Product has been Removed: 42: 42 stock level: 1
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> search
+Search Products
+
+Enter the product's identification
+> 42
+Product found: 42: 42 stock level: 1
+
+		Menu options
+Quit:		Quit program
+PrintAll:		Print every product
+Search:		Search for product
+Show low stock:		Print low stock items
+Restock:		Restock Products below 3
+> 
